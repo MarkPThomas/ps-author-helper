@@ -10,6 +10,10 @@
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
     "lint": "tslint -p tsconfig.json"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarkPThomas/ps-author-helper.git"
+  },
   "keywords": [
     "pluralsight",
     "greeting"
