@@ -12,9 +12,9 @@
     "prepare": "npm run build",
     "version": "npm run format && git add -A src",
     "postversion": "git push && git push --tags",
-    "login": "echo //registry.npmjs.org/:_authToken=npm_MY_TOKEN > ~/.npmrc",
+    "login": "npm login",
     "publish": "npm publish --access public",
-    "npmPush": "npm run login && npm run publish npm logout"
+    "npmPush": "npm run login && npm run publish"
   },
   "repository": {
     "type": "git",
