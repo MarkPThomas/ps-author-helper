@@ -1,6 +1,6 @@
 {
-  "name": "ps-author-helper",
-  "version": "1.0.0",
+  "name": "@markpthomas/ps-author-helper",
+  "version": "1.0.1",
   "description": "Pluralsight author helper",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -11,7 +11,10 @@
     "lint": "tslint -p tsconfig.json",
     "prepare": "npm run build",
     "version": "npm run format && git add -A src",
-    "postversion": "git push && git push --tags"
+    "postversion": "git push && git push --tags",
+    "login": "echo //registry.npmjs.org/:_authToken=npm_MY_TOKEN > ~/.npmrc",
+    "publish": "npm publish --access public",
+    "npmPush": "npm run login && npm run publish npm logout"
   },
   "repository": {
     "type": "git",
@@ -21,7 +24,7 @@
     "pluralsight",
     "greeting"
   ],
-  "author": "Mark P Thomas",
+  "author": "Mark P Thomas <markporterthomas@gmail.com> (https://github.com/MarkPThomas",
   "license": "ISC",
   "files": [
     "dist/**/*"
